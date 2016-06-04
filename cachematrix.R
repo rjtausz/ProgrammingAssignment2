@@ -1,12 +1,5 @@
-makeCacheMatrix <- function(x = matrix()) {
+#This function creates the matrix and the functions get and set matrix
 
-}
-
-Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        
-}
 makeCacheMatrix <-function(x=matrix()) {
   m<-NULL
   set<-function(y){
@@ -18,6 +11,8 @@ makeCacheMatrix <-function(x=matrix()) {
   list(set=set,get=get,
        setmatrix=setmatrix,
        getmatrix=getmatrix)}
+
+#This function does takes the inverse of the matrix from cache if it is there
 
 cachesolve <- function(x, ...) {
   m <- x$getmatrix()
